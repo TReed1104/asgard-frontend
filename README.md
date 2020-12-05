@@ -1,6 +1,16 @@
-# Vue Project Template
+# Asgard Frontend
+
+## What is Asgard?
+Asgard is a micro-service cluster designed and developed by the School of Computer Science's Technical team, at The Unniversity of Lincoln.
+
+This repository is for the frontend web app used to navigate between the multiple web apps of the service cluster.
+
+<br>
+
+---
+
 ## Overview
-Repository template for Vue.js projects
+The Asgard frontend has been developed using our template for Webpack-Vue projects.
 
 ### Features
 - Webpack Compilation
@@ -18,7 +28,10 @@ Repository template for Vue.js projects
 - Docker (optional - for Docker deployment)
 - Bash (optional - for scripted Docker deployment)
 
+
 <br>
+
+---
 
 ## Yarn Run Commands
 Local use with Yarn package manager.
@@ -43,6 +56,8 @@ yarn run build
 ```
 
 <br>
+
+---
 
 ## NPM Run Commands
 Local use with Node package manager.
@@ -69,6 +84,8 @@ npm run build
 
 <br>
 
+---
+
 ## Docker Deployment
 Deploys to Docker via Docker-compose
 
@@ -81,7 +98,7 @@ sudo chmod +x deployment/dev.sh
 
 #### Manual Deployment
 ```bash
-docker-compose -p vue-app-dev -f docker-compose.dev.yml up -d --build --remove-orphans
+docker-compose -p asgard-frontend-dev -f docker-compose.dev.yml up -d --build --remove-orphans
 ```
 ### Production
 #### Scripted Deployment
@@ -92,5 +109,5 @@ sudo chmod +x deployment/prod.sh
 
 #### Manual Deployment
 ```bash
-docker-compose -p vue-app -f docker-compose.yml up -d --build --remove-orphans
+docker-compose -p asgard-frontend -f docker-compose.yml up -d --build --remove-orphans
 ```
